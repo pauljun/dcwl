@@ -15,9 +15,17 @@
       </div>
     </header>
     <router-view></router-view>
+    <footer-view />
   </div>
 </template>
-
+<script>
+import FooterView from './footer';
+export default {
+  components: {
+    FooterView
+  }
+}
+</script>
 <style lang="less" scoped>
 .layout-wrapper {
   padding-top: 86px;

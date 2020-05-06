@@ -1,25 +1,27 @@
 <template>
   <div class="index-wrapper">
-    <div class="index-container w1220">
-      <div class="y1"></div>
-      <div class="y2"></div>
-      <div class="pr">
-        <div class="n">适合4-12岁孩子</div>
-        <div class="t">儿童数理思维直播课</div>
-        <div class="t1">
-          <span>专注儿童数学思维能力培养</span>
-          <span>小班在线教学，趣味互动</span><br />
-          <span>让孩子不止步于学知识，更学会思考</span>
-        </div>
-        <div class="c">
-          <div class="c1">限时免费</div>
-          <div class="c2">
-            领取<span>298</span>元精品试听课                
+    <div class="index-nav">
+      <div class="index-container w1220">
+        <div class="y1"></div>
+        <div class="y2"></div>
+        <div class="pr">
+          <div class="n">适合4-12岁孩子</div>
+          <div class="t">儿童数理思维直播课</div>
+          <div class="t1">
+            <span>专注儿童数学思维能力培养</span>
+            <span>小班在线教学，趣味互动</span><br />
+            <span>让孩子不止步于学知识，更学会思考</span>
           </div>
-          <div class="c3">
-            <el-input v-model="phone" placeholder="请输入手机号"></el-input>
-            <el-button type="primary" round>立即领取</el-button>
-            <p>栋材未来会保护您的隐私</p>
+          <div class="c">
+            <div class="c1">限时免费</div>
+            <div class="c2">
+              领取<span>298</span>元精品试听课
+            </div>
+            <div class="c3">
+              <el-input v-model="phone" placeholder="请输入手机号"></el-input>
+              <el-button type="primary" round>立即领取</el-button>
+              <p>栋材未来会保护您的隐私</p>
+            </div>
           </div>
         </div>
       </div>
@@ -64,10 +66,10 @@
 </template>
 
 <script>
-import Tfour from './t4';
+import Tfour from "./t4";
 export default {
   components: {
-    Tfour
+    Tfour,
   },
   data() {
     return {
@@ -85,7 +87,7 @@ export default {
         { h4: "游戏互动情景教学", h5: "让孩子爱上学习" },
         { h4: "立体化多环节教学", h5: "课堂-练习-测评三环保证学习效果" },
       ],
-      phone: ''
+      phone: "",
     };
   },
 };
