@@ -62,14 +62,36 @@
       <tfour />
       <div class="t3-title">领取试听</div>
     </div>
+    <div class="t5">
+      <tfive />
+      <div class="t3-title">领取试听</div>
+    </div>
+    <tsix />
+    <div class="t7">
+      <div class="w1220">
+        <img src="../../assets/images/home/t7.png" class="img" />
+        <span class="t7-c">
+          免费领取<strong>299</strong>元试听课
+        </span>
+        <div class="fr phone-group">
+          <el-input v-model="mobile" placeholder="请输入手机号" />
+          <span>立即免费领取</span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Tfour from "./t4";
+import Tfive from "./t5";
+import Tsix from "./t6";
+
 export default {
   components: {
     Tfour,
+    Tfive,
+    Tsix,
   },
   data() {
     return {
@@ -88,6 +110,7 @@ export default {
         { h4: "立体化多环节教学", h5: "课堂-练习-测评三环保证学习效果" },
       ],
       phone: "",
+      mobile: "",
     };
   },
 };

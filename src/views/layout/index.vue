@@ -19,12 +19,12 @@
   </div>
 </template>
 <script>
-import FooterView from './footer';
+import FooterView from "./footer";
 export default {
   components: {
-    FooterView
-  }
-}
+    FooterView,
+  },
+};
 </script>
 <style lang="less" scoped>
 .layout-wrapper {
@@ -37,6 +37,7 @@ export default {
     height: 86px;
     background: #fff;
     line-height: 86px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.1);
     width: 100%;
     .header {
       height: 86px;
