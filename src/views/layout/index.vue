@@ -5,8 +5,8 @@
         <img class="logo fl" src="../../assets/images/home/logo.png" />
         <span class="title fl" />
         <div class="fl menu">
-          <router-link class="active" to="/">首页</router-link>
-          <router-link to="/about">关于我们</router-link>
+          <router-link :class="$route.path === '/' ?'active':''" to="/">首页</router-link>
+          <router-link :class="$route.path !== '/' ?'active':''" to="/about">关于我们</router-link>
         </div>
         <div class="fr">
           <router-link to="/login">登录</router-link>
@@ -22,8 +22,8 @@
 import FooterView from "./footer";
 export default {
   components: {
-    FooterView,
-  },
+    FooterView
+  }
 };
 </script>
 <style lang="less" scoped>

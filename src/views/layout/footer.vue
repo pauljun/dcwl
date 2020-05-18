@@ -10,18 +10,16 @@
         <h3>公司信息</h3>
         <ul>
           <li>
-            <router-link to="/">
-              关于我们
-            </router-link>
+            <router-link to="/about">关于我们</router-link>
           </li>
           <li>
-            <router-link to="/">联系我们</router-link>
+            <router-link to="/about/concat">联系我们</router-link>
           </li>
           <li>
-            <router-link to="/">我们的承诺</router-link>
+            <router-link to="/about/promise">我们的承诺</router-link>
           </li>
           <li>
-            <router-link to="/">隐私政策</router-link>
+            <router-link to="/about/privacy">隐私政策</router-link>
           </li>
         </ul>
       </div>
