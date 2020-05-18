@@ -4,9 +4,22 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 const routes = [
   {
-    path: "/login",
-    name: "登录",
-    component: () => import("../views/login"),
+    path: "/user",
+    component: () => import("../views/user"),
+    children: [
+      {
+        path: "/user/login",
+        component: () => import("../views/user/login"),
+      },
+      {
+        path: "/user/register",
+        component: () => import("../views/user/register"),
+      },
+      {
+        path: "/user/find-password",
+        component: () => import("../views/user/find-password"),
+      },
+    ],
   },
   {
     path: "/",
