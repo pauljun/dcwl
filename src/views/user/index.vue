@@ -36,6 +36,34 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
+  .btn {
+    width: 100%;
+    height: 54px;
+    background: rgba(240, 178, 81, 1);
+    border-radius: 28px;
+    border: 0 none;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 40px;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #f0b251;
+    border-color: #f0b251;
+  }
+  .el-button.is-disabled,
+  .el-button.is-disabled:focus,
+  .el-button.is-disabled:hover {
+    border: #e1e1e1;
+    background: #e1e1e1;
+    color: #fff;
+  }
+  .input input {
+    height: 54px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 28px;
+    font-size: 16px;
+  }
   &:after {
     position: absolute;
     z-index: 0;
@@ -78,15 +106,16 @@
     top: 50%;
     width: 850px;
     height: 512px;
-    transform: translate(-50%, -60%);
     background: #fff;
+    margin-top: -350px;
+    margin-left: -425px;
     box-shadow: 0px 12px 24px 2px rgba(240, 178, 81, 0.15);
     border-radius: 16px;
     .bg {
       position: absolute;
       left: -104px;
       top: 0;
-      width: 472px;
+      width: 477px;
       height: 512px;
       padding: 135px 0 0 135px;
       background: url("../../assets/images/user/bg.png") no-repeat left -130px;
