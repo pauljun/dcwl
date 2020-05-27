@@ -6,7 +6,8 @@
         <span class="title fl" />
         <div class="fl menu">
           <router-link :class="$route.path === '/' ?'active':''" to="/">首页</router-link>
-          <router-link :class="$route.path !== '/' ?'active':''" to="/about">关于我们</router-link>
+          <router-link :class="$route.path.indexOf('/about') > -1 ?'active':''" to="/about">关于我们</router-link>
+          <router-link :class="$route.path.indexOf('/order') > -1 ?'active':''" to="/order">订单中心</router-link>
         </div>
         <div class="fr">
           <router-link to="/user/login">登录</router-link>

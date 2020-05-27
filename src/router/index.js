@@ -51,6 +51,18 @@ const routes = [
           },
         ],
       },
+      {
+        path: "/order/pay/:id",
+        component: () => import("../views/order-pay"),
+      },
+      {
+        path: "/order/detail/:id",
+        component: () => import("../views/order-detail"),
+      },
+      {
+        path: "/order",
+        component: () => import("../views/order"),
+      },
     ],
   },
   {

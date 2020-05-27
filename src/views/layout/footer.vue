@@ -23,11 +23,16 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="wechat">
         <h3>关注我们</h3>
         <div>
           <span>
-            <img />
+            <img width="94" src="../../assets/images/home/wechat.png" />
+            <div>栋材未来</div>
+          </span>
+          <span>
+            <img width="94" src="../../assets/images/home/kefu.png" />
+            <div>官方客服</div>
           </span>
         </div>
       </div>
@@ -91,6 +96,31 @@
       font-size: 16px;
       a {
         color: #fff;
+      }
+    }
+  }
+  .wechat {
+    padding-left: 100px;
+    position: relative;
+    &::before {
+      width: 1px;
+      height: 124px;
+      background: #c6c6c6;
+      content: "";
+      display: block;
+      position: absolute;
+      left: -160px;
+      top: 50px;
+    }
+    h3 {
+      margin-bottom: 40px;
+    }
+    span {
+      display: inline-block;
+      width: 94px;
+      text-align: center;
+      &:last-child {
+        float: right;
       }
     }
   }
